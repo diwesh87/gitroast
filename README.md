@@ -1,6 +1,7 @@
 # 🔥 gitroast
 
 **Roasts your git commit history. Run it. Regret it.**
+![demo](demo.gif)
 
 `gitroast` scans your commit messages and roasts you for every `fix`, `wip`,
 `final_v2_ACTUALLY`, and unhinged all-caps rage-commit hiding in your history.
