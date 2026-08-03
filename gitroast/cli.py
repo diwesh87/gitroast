@@ -7,6 +7,10 @@ import sys
 
 from .roasts import analyze, format_report
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 
 def get_commit_messages(path, limit=None, author=None):
     cmd = ["git", "-C", path, "log", "--pretty=format:%s"]
